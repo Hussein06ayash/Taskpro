@@ -15,6 +15,10 @@ public class Task {
     private String priority = "MEDIUM";
     private String category = "General";
     private String notes = "";
+    private String username;
+    private String email;
+    private LocalDateTime dueDateTime;
+    private boolean notificationSent = false;
 
     private LocalDateTime createdAt;
 
@@ -43,4 +47,15 @@ public class Task {
 
     public LocalDateTime getCreatedAt() { return createdAt; }
     public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }
+    public String getUsername() { return username; }
+public void setUsername(String username) { this.username = username; }
+
+public String getEmail() { return email; }
+public void setEmail(String email) { this.email = email; }
+
+public LocalDateTime getDueDateTime() { return dueDateTime; }
+public void setDueDateTime(LocalDateTime dueDateTime) { this.dueDateTime = dueDateTime; }
+
+public boolean isNotificationSent() { return notificationSent; }
+public void setNotificationSent(boolean notificationSent) { this.notificationSent = notificationSent; }
 }
